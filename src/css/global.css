@@ -1,0 +1,16 @@
+.txtHover:hover{
+   color: aqua;
+}
+
+#retornoEmail{
+   color: red;
+   font-size: small;
+   text-align:end ;
+   display: flex;
+   justify-content: end;
+}
+
+.imagemNewsLetter{
+   width: auto;
+   height: 100px;
+}

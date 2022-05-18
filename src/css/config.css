@@ -1,0 +1,12 @@
+:root{
+    --cor-purple: #C55FFC;
+    --cor-purple-haze: #EFDCF9;
+    --cor-purple-charcoral: #323E42;
+    --cor-purple-violet: #7954A1;
+
+    --cor-vermelho: #860303c8;
+}
+
+*{
+font-family: 'Roboto', sans-serif;
+}
