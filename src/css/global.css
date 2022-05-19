@@ -14,3 +14,7 @@
    width: auto;
    height: 100px;
 }
+
+#btnBuscaCep:hover{
+   color: blue;
+}
