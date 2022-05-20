@@ -2,7 +2,7 @@
    color: aqua;
 }
 
-#retornoEmail{
+#retornoEmail, #retornoNome{
    color: red;
    font-size: small;
    text-align:end ;
