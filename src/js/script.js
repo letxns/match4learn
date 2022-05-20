@@ -1,18 +1,35 @@
 $("#btn_frm_newsletter").click(function (event) {
   event.preventDefault();
-  let emailNewsLetter = $("#inptutEmailNewsLetter").val();
+
+  validaNome();
+  validaEmail();
+
+});
+
+function validaNome(){
+  let nome = $("#inputNome").val();
+
+  if(nome.length === 0){
+    $("#modal-mensagem").modal();
+    $("#retornoNome").html(`Nome Inválido`);
+  } 
+  console.log(nome);
+}
+
+function validaEmail(){
+  let email = $("#inputEmail").val();
 
   if (
-    emailNewsLetter.indexOf("@") >= 0 &&
-    emailNewsLetter.indexOf(".") >= 0 &&
-    emailNewsLetter.indexOf(" ") <= 0
+    email.indexOf("@") >= 0 &&
+    email.indexOf(".") >= 0 &&
+    email.indexOf(" ") <= 0
   ) {
-    console.log(emailNewsLetter);
-    $("#modal-mensagem").modal();
-  } else {
-    $("#retornoEmail").html(`E-mail Inválido`);
-  }
-});
+  console.log(email);
+  }else{
+    $("#modal-mensagem").modal();    
+    $("#retornoEmail").html(`E-mail Inválido`);      
+  }   
+}
 
 $("#btnBuscaCep").click(function (event) {
   event.preventDefault();
@@ -34,15 +51,16 @@ $("#btnBuscaCep").click(function (event) {
 $("#btnCadastrar").click(function (event) {
   event.preventDefault();
 
-  let email = $("inputEmail").val();
-  let senha = $("inputSenha").val();
-  let cep = $("inputZip").val();
-  let logradouro = $("logradouro").val();
-  let numero = $("numero").val();
-  let bairro = $("bairro").val();
-  let cidade = $("cidade").val();
-  let uf = $("uf").val();
-  let aceite = $("gridCheck").val();
+  let email = $("#inputEmail").val();
+  let senha = $("#inputSenha").val();
+  let cep = $("#inputZip").val();
+  let logradouro = $("#logradouro").val();
+  let numero = $("#numero").val();
+  let bairro = $("#bairro").val();
+  let cidade = $("#cidade").val();
+  let uf = $("#uf").val();
+  let aceite = $('#gridCheck').prop('checked')
+
 
   console.log(email);
   console.log(senha);
@@ -53,4 +71,8 @@ $("#btnCadastrar").click(function (event) {
   console.log(cidade);
   console.log(uf);
   console.log(aceite);
+
+  validaNome();
+  validaEmail();
 });
+
