@@ -3,12 +3,31 @@
     padding: 0;
 }
 
+#icons-contato {
+    display: flex;
+    justify-content: end;
+    font-size: 2em;
+}
+
+
+.icon{
+    margin-right: 2%;
+}
+
 .bg-violet{
     background-color: var(--cor-purple-violet);
 }
 
 .container{
     width: 100%;
+}
+
+.contato a {
+    text-decoration: none;
+}
+
+.contato a:hover {
+    color: rgb(107, 54, 163);
 }
 
 .link-cadastro{
