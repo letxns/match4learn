@@ -14,15 +14,17 @@
 <body>
   <!--HEADER-->
   <nav class="navbar navbar-expand-lg px-3 py-2 bg-violet text-white" id="color">
-    <div class="container navbar-nav d-flex">
-        <a href="index.html" class="text-white text-decoration-none">
-          <img src="./src/img/logo.png" class="bi me-2" width="auto" height="60" role="img" aria-label="Bootstrap" >           
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+    <div class="container navbar-nav justify-content-around">
+        <div class="logo d-flex">
+          <a href="index.html" class="text-white text-decoration-none me-5">
+            <img src="./src/img/logo.png" class="bi me-2" width="auto" height="60" role="img" aria-label="Logo">          
+          </a>
+          <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div> 
+        <div class="collapse navbar-collapse justify-content-end" >
+          <div class="navbar-nav" id="navbarNavAltMarkup">
             <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
               <li class="navbar-nav">
                 <a href="./index.html" class="nav-link text-white">
@@ -69,11 +71,9 @@
  
   <!--/BANNER-->
 
-  <!--CHAMADA NEWSLETTER-->
-
   <section class="container">
-    <div class="align-items-center d-flex justify-content-between principal">     
-      <div class="col col-lg-8">
+    <div class="col col-lg-6 align-items-center d-flex justify-content-between principal">     
+      <div class="col col-lg-12">
         <h2><strong>BEM VINDO</strong></h2>
         <div class="align-items-center">
           <div class="col col-lg-8 texto-inicial">
@@ -89,29 +89,44 @@
           </div>-->
         </div>
       </div>
-      <div class="container">
-        <div class="col-lg-10">
+    <!--CHAMADA NEWSLETTER-->
+      <div class="container col col-lg-6">
+        <p>
+          Não perca tempo e se inscreva agora na nossa lista de espera!
+        </p>
+        <div class="col-lg-8">
           <input type="text" class="form-control mb-2" placeholder="Nome Completo" id="inputNome">
         </div>
         <span id="retornoNome"></span>
-        <div class="col-lg-10">
+        <div class="col-lg-8">
           <input id="inputEmail" type="email" class="form-control mb-2" placeholder="E-mail">
         </div>
         <span id="retornoEmail"></span>
-        <div>
-          <button type="submit" id="btn_frm_newsletter" class="btn btn-primary">Enviar</button>
-        </div>
+  <!-- Button trigger modal -->        
+        <button type="submit" id="btn_frm_newsletter" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Enviar</button>
+      </div>
+    <!--/CHAMADA NEWSLETTER-->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Parabéns! Você está inscrito na lista de espera.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendi</button>
       </div>
     </div>
+  </div>
+</div>
+  <!--MODAL-->
+
+    </div>
   </section>
-  
-
- 
-  <!--/CHAMADA NEWSLETTER-->
-
-  <!--MODAL-->
-
-  <!--MODAL-->
 
  <!--FOOTER-->
  <footer class="bd-footer py-5 mt-5 bg-light">
