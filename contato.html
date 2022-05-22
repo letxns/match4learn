@@ -13,53 +13,56 @@
 </head>
 <body>
   <!--HEADER-->
-    <header>
-   
-    <div class="px-3 py-2 bg-violet text-white">
-        <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-              <img src="./src/img/logo.png" class="bi me-2" width="auto" height="60" role="img" aria-label="Bootstrap" >           
-            </a>
+  <nav class="navbar navbar-expand-lg px-3 py-2 bg-violet text-white" id="color">
+    <div class="container navbar-nav justify-content-around">
+        <div class="logo d-flex">
+          <a href="index.html" class="text-white text-decoration-none me-5">
+            <img src="./src/img/logo.png" class="bi me-2" width="auto" height="60" role="img" aria-label="Logo">          
+          </a>
+          <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div> 
+        <div class="collapse navbar-collapse justify-content-end" >
+          <div class="navbar-nav" id="navbarNavAltMarkup">
             <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                <li>
+              <li class="navbar-nav">
                 <a href="./index.html" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg>
-                    Página Inicial
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg>
+                  Página Inicial
                 </a>
-                </li>
-                <li>
-                <a href="#" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
-                    Planos e Serviços
+              </li>
+              <li>
+                <a href="./planos.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
+                  Planos e Serviços
                 </a>
-                </li>
-                <li>
-                <a href="contato.html" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>
-                    Contato
+              </li>
+              <li>
+                <a href="./contato.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>
+                  Contato
                 </a>
-                </li>
-                <li>
-                <a href="#" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>
-                    Sobre
+              </li>
+              <li>
+                <a href="./sobre.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>
+                  Sobre
                 </a>
-                </li>
+              </li>
             </ul>
-            </div>
-      </div>
-    </div>
-    <div class="px-3 py-2 border-bottom mb-3">
-      <div class="container d-flex flex-wrap justify-content-lg-end">
-          <div class="text-end">
-          <a href="./login.html" class="btn btn-light text-dark me-2">Entrar</a>
-          <a href="./cadastro.html" class="btn btn-primary">Cadastrar</a>
+          </div>
         </div>
+    </div>
+  </nav>
+  <div class="px-3 py-2 border-bottom mb-3">
+    <div class="container d-flex flex-wrap justify-content-lg-end">
+        <div class="text-end">
+        <a href="./login.html" class="btn btn-light text-dark me-2">Entrar</a>
+        <a href="./cadastro.html" class="btn btn-primary">Cadastrar</a>
       </div>
     </div>
-  </header>
-  
+  </div>
   <!--/HEADER-->
 
   <!--BANNER-->
@@ -69,34 +72,27 @@
   <!--CHAMADA NEWSLETTER-->
 
   <div class="container">
-    <div class="row align-items-center">
-      
-    <div class="col col-lg-8">
-      <h2><strong>CONTATO</strong></h2>
-      <div class="row align-items-center">
-      <div class="col col-lg-8">
-      <p>
-        LOREM
-      </p>
+    <div class="row align-items-center"> 
+      <h2><strong>CONTATO</strong></h2>    
+      <div class="col col-lg-6">
+        <div class="row align-items-center">
+          <div class="col col-lg-8">
+            <p>
+              Isaac
+            </p>
+          </div>
       </div>
     </div>
-  </div>
-    <div class="col col-lg-4">
-      <div class="colum g-2">
-        <div class="col">
-          <input type="text" class="form-control mb-2" placeholder="Nome Completo" id="inputNome">
-          <span id="retornoNome"></span>
-        </div>
-        <div class="col">
-          <input id="inputEmail" type="email" class="form-control mb-2" placeholder="E-mail" >
-        </div>
-        <span id="retornoEmail"></span>
-        <div>
-          <button type="submit" id="btn_frm_newsletter" class="btn btn-primary">Enviar</button>
+      <div class="col col-lg-6">
+        <div class="colum g-2">
+          <div class="col">
+            <p>
+              Leticia
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   </div>
  
   <!--/CHAMADA NEWSLETTER-->
