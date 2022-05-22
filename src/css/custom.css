@@ -34,10 +34,41 @@
     text-decoration: none;
 }
 
+.mentor{
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+}
+
 .nav-section{
     display: flex;
     justify-content: end;
     text-align: end;
+}
+
+.plano{
+    color: rgb(107, 54, 163);
+}
+
+.plano, .plano-titulo{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.preco{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.preco-titulo{
+    align-self: center;
+    margin: 0% 2%;
+}
+
+.preco-mes{
+    padding-left: 1%;
+    align-self: end;
 }
 
 .recupera-senha{
