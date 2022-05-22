@@ -15,7 +15,6 @@ $("#btn_frm_newsletter").click(function (event) {
 });
 
 $("#inputZip").on('blur', function () {
-  event.preventDefault();
   const url = "https://viacep.com.br/ws/";
   const cep = $("#inputZip").val();
   const complemento = "/json/";
