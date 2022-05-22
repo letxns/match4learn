@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./src/img/ico.ico">
+    <link rel="stylesheet" href="./src/css/main.css">
+  <title>match4learn</title>
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar navbar-expand-lg px-3 py-2 bg-violet text-white" id="color">
+    <div class="container navbar-nav justify-content-around">
+        <div class="logo d-flex">
+          <a href="index.html" class="text-white text-decoration-none me-5">
+            <img src="./src/img/logo.png" class="bi me-2" width="auto" height="60" role="img" aria-label="Logo">          
+          </a>
+          <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div> 
+        <div class="collapse navbar-collapse justify-content-end" >
+          <div class="navbar-nav" id="navbarNavAltMarkup">
+            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+              <li class="navbar-nav">
+                <a href="./index.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg>
+                  Página Inicial
+                </a>
+              </li>
+              <li>
+                <a href="./planos.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
+                  Planos e Serviços
+                </a>
+              </li>
+              <li>
+                <a href="./contato.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>
+                  Contato
+                </a>
+              </li>
+              <li>
+                <a href="./sobre.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>
+                  Sobre
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </nav>
+    <div class="px-3 py-2 border-bottom mb-3">
+      <div class="container d-flex flex-wrap justify-content-lg-end nav-section">
+          <div class="text-end">
+          <a href="./login.html" class="btn btn-light text-dark me-2">Entrar</a>
+          <a href="./cadastro.html" class="btn btn-primary">Cadastrar</a>
+        </div>
+      </div>
+    </div>
+
+  
+  <!--/HEADER-->
+
+  <!--BANNER-->
+ 
+  <!--/BANNER-->
+
+  <section class="container">
+    <div class="col col-lg-6 align-items-center d-flex justify-content-between principal">     
+      <div class="col col-lg-12">
+        <h2><strong>Esqueceu sua senha?</strong></h2>
+        <div class="align-items-center">
+          <div class="col col-lg-8 texto-inicial">
+          <p>
+            Faça seu <a href="cadastro.html" class="link-cadastro">cadastro</a> em poucos minutos e conheça nossos serviços!
+          </p>
+          </div>
+          <!--<div class="col col-lg-4">
+          <img class="imagemNewsLetter" src="./src/img/sino.png" alt="">
+          </div>-->
+        </div>
+      </div>
+    <!--Login-->
+      <div class="container col col-lg-6">
+        <p>
+          Faça já seu login!
+        </p>
+        <div class="col-lg-8">
+          <input type="text" class="form-control mb-2" placeholder="Nome Completo" id="inputNome">
+        </div>
+        <span class="col-lg-8" id="retornoNome"></span>
+        <div class="col-lg-8">
+          <input id="inputEmail" type="email" class="form-control mb-2" placeholder="E-mail">
+        </div>
+        <span class="col-lg-8" id="retornoEmail"></span>        
+        <a href="recupera-senha.html" class="recupera-senha col-lg-8">Esqueci minha senha</a>
+  <!-- Button trigger modal -->        
+        <button type="submit" id="btn_login" class="btn btn-primary">Enviar</button>
+      </div>
+    <!--/Login-->
+<!-- Modal -->
+<div class="modal fade" id="modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLoginLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-login">
+        Parabéns! Login bem sucedido.
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Entendi</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--MODAL-->
+
+    </div>
+  </section>
+
+ <!--FOOTER-->
+ <footer class="bd-footer py-5 mt-5 bg-light">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-3 mb-3">
+        <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="index.html" aria-label="Bootstrap">
+          <img src="./src/img/ico.ico" width="25px" alt="logo match 4 learn" class="m-1">
+          <span class="fs-5">match4learn</span>
+        </a>
+        <ul class="list-unstyled small text-muted">
+          <li class="mb-2">Designed and built with all the love in the world by <a href="/docs/5.0/about/team/">Grupo 9 - T18</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
+          <li class="mb-2">Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
+          <li class="mb-2">Currently v5.0.2.</li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+        <h5>Links</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="./index.html">Página Inicial</a></li>
+          <li class="mb-2"><a href="./planos.html">Planos e Serviços</a></li>
+          <li class="mb-2"><a href="./contato.html">Contato</a></li>
+          <li class="mb-2"><a href="./sobre.html">Sobre</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>Guides</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="/docs/5.0/getting-started/">Getting started</a></li>
+          <li class="mb-2"><a href="/docs/5.0/examples/starter-template/">Starter template</a></li>
+          <li class="mb-2"><a href="/docs/5.0/getting-started/webpack/">Webpack</a></li>
+          <li class="mb-2"><a href="/docs/5.0/getting-started/parcel/">Parcel</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>Projects</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Bootstrap 5</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/icons">Icons</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/rfs">RFS</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap-npm-starter">npm starter</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>Community</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions">Discussions</a></li>
+          <li class="mb-2"><a href="https://github.com/sponsors/twbs">Corporate sponsors</a></li>
+          <li class="mb-2"><a href="https://opencollective.com/bootstrap">Open Collective</a></li>
+          <li class="mb-2"><a href="https://bootstrap-slack.herokuapp.com/">Slack</a></li>
+          <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack Overflow</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!--/FOOTER-->
+
+
+
+  <script src="./src/js/bootstrap.bundle.min.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="./src/js/script.js"></script>
+</body>
+</html>
