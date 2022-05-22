@@ -56,7 +56,7 @@
     </div>
   </nav>
     <div class="px-3 py-2 border-bottom mb-3">
-      <div class="container d-flex flex-wrap justify-content-lg-end">
+      <div class="container d-flex flex-wrap justify-content-lg-end nav-section">
           <div class="text-end">
           <a href="./login.html" class="btn btn-light text-dark me-2">Entrar</a>
           <a href="./cadastro.html" class="btn btn-primary">Cadastrar</a>
@@ -94,29 +94,31 @@
         <div class="col-lg-8">
           <input type="text" class="form-control mb-2" placeholder="Nome Completo" id="inputNome">
         </div>
-        <span id="retornoNome"></span>
+        <span class="col-lg-8" id="retornoNome"></span>
         <div class="col-lg-8">
           <input id="inputEmail" type="email" class="form-control mb-2" placeholder="E-mail">
         </div>
-        <a href="recupera-senha.html" class="recupera-senha col-lg-8">Esqueci minha senha</a>
-        <span id="retornoEmail"></span>
+        <span class="col-lg-8" id="retornoEmail"></span>        
+        <div class="recupera-senha col-lg-8">
+            <a href="recupera-senha.html" class="recupera-senha">Esqueci minha senha</a>
+        </div>
   <!-- Button trigger modal -->        
-        <button type="submit" id="btn_login" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Enviar</button>
+        <button type="button" id="btn_login" class="btn btn-primary" data-bs-target="#staticBackdrop">Enviar</button>
       </div>
     <!--/Login-->
 <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">Sucesso</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         Parabéns! Login bem sucedido.
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendi</button>
+        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Entendi</button>
       </div>
     </div>
   </div>
@@ -195,18 +197,3 @@
   <script src="./src/js/script.js"></script>
 </body>
 </html>
-
-<div class="container col col-lg-6">
-    <p>
-        login
-    </p>
-    <div class="col-lg-8">
-      <input type="text" class="form-control mb-2" placeholder="Nome Completo" id="inputNome">
-    </div>
-    <span id="retornoNome"></span>
-    <div class="col-lg-8">
-      <input id="inputEmail" type="email" class="form-control mb-2" placeholder="E-mail">
-    </div>
-
-    <span id="retornoEmail"></span>
-</div>
