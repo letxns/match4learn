@@ -17,8 +17,27 @@
     background-color: var(--cor-purple-violet);
 }
 
+.card-conteudo{
+    margin-left: 5%;
+}
+
+.card-contato{
+    padding: 2%;
+}
+
 .container{
     width: 100%;
+}
+
+.container-card{
+    flex-direction: row;
+}
+
+.contato{
+    border: 1px solid black;
+    box-shadow: 2px 2px blue;
+    padding: 5%;
+    display: flex;
 }
 
 .contato a {
@@ -27,6 +46,10 @@
 
 .contato a:hover {
     color: rgb(107, 54, 163);
+}
+
+.imagem-contato{
+    border-radius: 150px;
 }
 
 .link-cadastro{
@@ -83,6 +106,15 @@
     }
 
     .card-contato{
+        flex-direction: row;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contato{
         flex-direction: column;
     }
 }
