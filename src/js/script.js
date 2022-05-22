@@ -1,10 +1,19 @@
 $("#btn_frm_newsletter").click(function (event) {
   event.preventDefault();
-
-  validaNome();
-  validaEmail();
+  validarLogin();
+  $("#modal-lista").modal();
 
 });
+
+$("#btn_login").click(function () {
+  validarLogin();
+  $("#modal-login").modal();
+});
+
+function validarLogin(){
+  validaNome();
+  validaEmail();
+}
 
 function validaNome(){
   let nome = $("#inputNome").val();
@@ -72,7 +81,6 @@ $("#btnCadastrar").click(function (event) {
   console.log(uf);
   console.log(aceite);
 
-  validaNome();
-  validaEmail();
+  validarLogin();
 });
 

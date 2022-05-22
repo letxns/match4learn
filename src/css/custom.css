@@ -15,10 +15,16 @@
     text-decoration: none;
 }
 
+.nav-section{
+    display: flex;
+    justify-content: end;
+    text-align: end;
+}
+
 .recupera-senha{
     display: flex;
     justify-content: end;
-    font-size: 0.8em;
+    font-size: 0.9em;
     text-decoration: none;
 }
 
