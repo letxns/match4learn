@@ -3,14 +3,27 @@
 
 }
 
+#retornoEmail, #retornoNome{
 
-#retornoEmail{
-   color: red;
    font-size: small;
    text-align:end ;
    display: flex;
    justify-content: end;
 }
+
+.emailValidado{
+   color: rgb(4, 184, 10);
+  
+}
+
+.emailInvalido{
+   color: rgb(251, 0, 0);
+  
+}
+
+
+
+
 
 .imagemNewsLetter{
    width: auto;
