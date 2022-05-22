@@ -1,6 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .bg-violet{
     background-color: var(--cor-purple-violet);
 }
+
+.container{
+    width: 100%;
+}
+
 .link-cadastro{
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .principal{
+        flex-direction: column;
+    }
 }
