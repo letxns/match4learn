@@ -9,7 +9,6 @@
     font-size: 2em;
 }
 
-
 .icon{
     margin-right: 2%;
 }
@@ -80,6 +79,16 @@
 
 @media (max-width: 768px) {
     .principal{
+        flex-direction: column;
+    }
+
+    .card-contato{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 320px) {  
+    .menu{
         flex-direction: column;
     }
 }
