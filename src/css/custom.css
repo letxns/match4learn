@@ -18,6 +18,7 @@
 }
 
 .card-conteudo{
+    align-self: center;
     margin-left: 5%;
 }
 
@@ -37,6 +38,7 @@
     border: 1px solid black;
     box-shadow: 2px 2px blue;
     padding: 5%;
+    margin: 0 5% 5% 0;
     display: flex;
 }
 
@@ -49,6 +51,8 @@
 }
 
 .imagem-contato{
+    width: 35%;
+    height: 35%;
     border-radius: 150px;
 }
 
@@ -59,7 +63,6 @@
 .mentor{
     display: flex;
     justify-content: center;
-    padding-top: 1%;
 }
 
 .nav-section{
@@ -101,6 +104,7 @@
 }
 
 @media (max-width: 768px) {
+    
     .principal{
         flex-direction: column;
     }
@@ -109,18 +113,28 @@
         flex-direction: row;
     }
 
-    .card{
+    .container-card{
         display: flex;
         flex-direction: column;
     }
 
     .contato{
-        flex-direction: column;
+        flex-direction: row;
     }
+
 }
 
 @media (max-width: 320px) {  
+
+    .contato{
+        flex-direction: column;
+    }
+
+    .imagem-contato{
+        align-self: center;
+    }
     .menu{
         flex-direction: column;
     }
+
 }
