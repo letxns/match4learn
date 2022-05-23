@@ -16,7 +16,7 @@
   
 }
 
-.emailInvalido{
+.emailInvalido, .nomeInvalido{
    color: rgb(251, 0, 0);
   
 }

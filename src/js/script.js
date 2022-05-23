@@ -20,9 +20,10 @@ function validaNome(){
 
   if(nome.length === 0){
     // $("#modal-mensagem").modal();
-    $("#retornoNome").html(`Nome Inválido`);
+    $("#retornoNome").html(`<p class="nomeInvalido">Nome Inválido</p>`);
+  }else{        
+    $("#retornoNome").html(`<p></p>`);      
   } 
-  console.log(nome);
 }
 
 function validaEmail(){
@@ -33,10 +34,8 @@ function validaEmail(){
     email.indexOf(".") >= 0 &&
     email.indexOf(" ") <= 0
   ) {
-    $("#retornoEmail").html(`<p class='emailValidado'>E-mail cadastrado com sucesso</p>`);
-    
-  }else{
-        
+    $("#retornoEmail").html(`<p class='emailValidado'>E-mail cadastrado com sucesso</p>`);    
+  }else{        
     $("#retornoEmail").html(`<p class='emailInvalido' >E-mail Inválido</p>`);      
   }   
 }
