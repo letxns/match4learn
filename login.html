@@ -56,7 +56,7 @@
     </div>
   </nav>
     <div class="px-3 py-2 border-bottom mb-3">
-      <div class="container d-flex flex-wrap justify-content-lg-end">
+      <div class="container d-flex flex-wrap justify-content-lg-end nav-section">
           <div class="text-end">
           <a href="./login.html" class="btn btn-light text-dark me-2">Entrar</a>
           <a href="./cadastro.html" class="btn btn-primary">Cadastrar</a>
@@ -74,34 +74,57 @@
   <section class="container">
     <div class="col col-lg-6 align-items-center d-flex justify-content-between principal">     
       <div class="col col-lg-12">
-        <h2><strong>BEM VINDO</strong></h2>
+        <h2><strong>Ainda não é cadastrado?</strong></h2>
         <div class="align-items-center">
           <div class="col col-lg-8 texto-inicial">
           <p>
-            Dedicada a unir pessoas interessadas em aprender e ensinar as mais diversas linguagens de programação, 
-            a <strong>match4learn</strong> tem como objetivo te ajudar a encontrar um par ideal para seus estudos. 
-            <br><br>
-            Faça já seu <a href="cadastro.html" class="link-cadastro">cadastro</a> e conheça nossos serviços!
+            Faça seu <a href="cadastro.html" class="link-cadastro">cadastro</a> em poucos minutos e conheça nossos serviços!
           </p>
           </div>
-                </div>
+          <!--<div class="col col-lg-4">
+          <img class="imagemNewsLetter" src="./src/img/sino.png" alt="">
+          </div>-->
+        </div>
       </div>
-    <!--CHAMADA NEWSLETTER-->
+    <!--Login-->
       <div class="container col col-lg-6">
         <p>
-          Não perca tempo e se inscreva agora na nossa lista de espera!
+          Faça já seu login!
         </p>
         <div class="col-lg-8">
           <input type="text" class="form-control mb-2" placeholder="Nome Completo" id="inputNome">
         </div>
-        <div class="col-lg-8" id="retornoNome"></div>
+        <span class="col-lg-8" id="retornoNome"></span>
         <div class="col-lg-8">
           <input id="inputEmail" type="email" class="form-control mb-2" placeholder="E-mail">
         </div>
-        <div  class="col-lg-8" id="retornoEmail"></div>
-          <button type="submit" id="btn_frm_newsletter" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Enviar</button>
+        <span class="col-lg-8" id="retornoEmail"></span>        
+        <div class="recupera-senha col-lg-8">
+            <a href="recupera-senha.html" class="recupera-senha">Esqueci minha senha</a>
+        </div>
+  <!-- Button trigger modal -->        
+        <button type="button" id="btn_login" class="btn btn-primary" data-bs-target="#staticBackdrop">Enviar</button>
       </div>
-    
+    <!--/Login-->
+<!-- Modal -->
+<div class="modal fade" id="modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Sucesso</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Parabéns! Login bem sucedido.
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Entendi</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--MODAL-->
+
     </div>
   </section>
 

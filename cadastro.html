@@ -31,7 +31,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="nav-link text-white">
+              <a href="./planos.html" class="nav-link text-white">
                 <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
                 Planos e Serviços
               </a>
@@ -85,18 +85,15 @@
       <label for="inputZip" class="form-label">CEP</label>
       <input type="number" class="form-control" id="inputZip">
     </div>
-    <div class="col-1">
-      <button id="btnBuscaCep" type="submit" class="btn btn border-0 mt-5 p-1">Buscar</button>
-    </div>
-    <div class="col-11">
+       <div class="col-11">
       <label for="inputAddress" class="form-label">Logradouro</label>
       <input type="text" class="form-control" id="logradouro">
     </div>
-    <div class="col-1">
+    <div class="col-3">
       <label for="inputAddress" class="form-label">Número</label>
       <input type="text" class="form-control" id="numero">
     </div>
-    <div class="col-5">
+    <div class="col-6">
       <label for="inputAddress2" class="form-label">Bairro</label>
       <input type="text" class="form-control" id="bairro">
     </div>
@@ -118,12 +115,27 @@
       </div>
     </div>
     <div class="col-12">
-      <button id="btnCadastrar" type="submit" class="btn btn-primary">Cadastrar</button>
+      <button type="submit" id="btnCadastrar" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Cadastrar</button>
     </div>
   </form>
 </div>
   <!--/FORMULARIO-->
-
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Cadastro realizado!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Parabéns! Você realizou seu cadastro.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendi</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
  <!--FOOTER-->
  <footer class="bd-footer py-5 mt-5 bg-light">
@@ -185,6 +197,10 @@
 </footer>
   <!--/FOOTER-->
 
+
+  <script src="./src/models/cadastroUsuarios.js"></script>
+  <script src="./src/views/cadastroUsuarios-view.js"></script>
+  <script src="./src/controllers/cadastroUsuarios-controller.js"></script>
 
 
   <script src="./src/js/bootstrap.bundle.min.js"></script>

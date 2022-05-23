@@ -1,6 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#icons-contato {
+    display: flex;
+    justify-content: end;
+    font-size: 2em;
+}
+
+.icon{
+    margin-right: 2%;
+}
+
 .bg-violet{
     background-color: var(--cor-purple-violet);
 }
+
+.card-conteudo{
+    align-self: center;
+    margin-left: 5%;
+}
+
+.card-contato{
+    padding: 2%;
+}
+
+.container{
+    width: 100%;
+}
+
+.container-card{
+    flex-direction: row;
+}
+
+.contato{
+    border: 1px solid black;
+    box-shadow: 2px 2px blue;
+    padding: 5%;
+    margin: 0 5% 5% 0;
+    display: flex;
+}
+
+.contato a {
+    text-decoration: none;
+}
+
+.contato a:hover {
+    color: rgb(107, 54, 163);
+}
+
+.imagem-contato{
+    width: 35%;
+    height: 35%;
+    border-radius: 150px;
+}
+
 .link-cadastro{
     text-decoration: none;
+}
+
+.mentor{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-section{
+    display: flex;
+    justify-content: end;
+    text-align: end;
+}
+
+.plano{
+    color: rgb(107, 54, 163);
+}
+
+.plano, .plano-titulo{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.preco{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.preco-titulo{
+    align-self: center;
+    margin: 0% 2%;
+}
+
+.preco-mes{
+    padding-left: 1%;
+    align-self: end;
+}
+
+.recupera-senha{
+    display: flex;
+    justify-content: end;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    
+    .principal{
+        flex-direction: column;
+    }
+
+    .card-contato{
+        flex-direction: row;
+    }
+
+    .container-card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contato{
+        flex-direction: row;
+    }
+
+}
+
+@media (max-width: 320px) {  
+
+    .contato{
+        flex-direction: column;
+    }
+
+    .imagem-contato{
+        align-self: center;
+    }
+    .menu{
+        flex-direction: column;
+    }
+
 }

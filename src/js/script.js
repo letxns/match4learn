@@ -1,19 +1,29 @@
 $("#btn_frm_newsletter").click(function (event) {
   event.preventDefault();
-
-  validaNome();
-  validaEmail();
+  validarLogin();
+  // $("#modal-lista").modal();
 
 });
+
+$("#btn_login").click(function () {
+  validarLogin();
+  // $("#modal-login").modal();
+});
+
+function validarLogin(){
+  validaNome();
+  validaEmail();
+}
 
 function validaNome(){
   let nome = $("#inputNome").val();
 
   if(nome.length === 0){
-    $("#modal-mensagem").modal();
-    $("#retornoNome").html(`Nome Inválido`);
+    // $("#modal-mensagem").modal();
+    $("#retornoNome").html(`<p class="nomeInvalido">Nome Inválido</p>`);
+  }else{        
+    $("#retornoNome").html(`<p></p>`);      
   } 
-  console.log(nome);
 }
 
 function validaEmail(){
@@ -24,15 +34,13 @@ function validaEmail(){
     email.indexOf(".") >= 0 &&
     email.indexOf(" ") <= 0
   ) {
-  console.log(email);
-  }else{
-    $("#modal-mensagem").modal();    
-    $("#retornoEmail").html(`E-mail Inválido`);      
+    $("#retornoEmail").html(`<p class='emailValidado'>E-mail cadastrado com sucesso</p>`);    
+  }else{        
+    $("#retornoEmail").html(`<p class='emailInvalido' >E-mail Inválido</p>`);      
   }   
 }
 
-$("#btnBuscaCep").click(function (event) {
-  event.preventDefault();
+$("#inputZip").on('blur', function () {
   const url = "https://viacep.com.br/ws/";
   const cep = $("#inputZip").val();
   const complemento = "/json/";
@@ -72,7 +80,6 @@ $("#btnCadastrar").click(function (event) {
   console.log(uf);
   console.log(aceite);
 
-  validaNome();
-  validaEmail();
+  validarLogin();
 });
 
