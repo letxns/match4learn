@@ -33,8 +33,10 @@ function validaEmail(){
     email.indexOf("@") >= 0 &&
     email.indexOf(".") >= 0 &&
     email.indexOf(" ") <= 0
+    
   ) {
-    $("#retornoEmail").html(`<p class='emailValidado'>E-mail cadastrado com sucesso</p>`);    
+    $("#retornoEmail").html(`<p class='emailValidado'>E-mail cadastrado com sucesso</p>`);
+    
   }else{        
     $("#retornoEmail").html(`<p class='emailInvalido' >E-mail Inválido</p>`);      
   }   
