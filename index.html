@@ -8,10 +8,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="./src/img/ico.ico">
-    <link rel="stylesheet" href="./src/css/main.css">
+  <link rel="stylesheet" href="./src/css/main.css">
   <title>match4learn</title>
 </head>
 <body>
+
   <!--HEADER-->
   <nav class="navbar navbar-expand-lg px-3 py-2 bg-violet text-white" id="color">
     <div class="container navbar-nav justify-content-around">
@@ -63,11 +64,41 @@
         </div>
       </div>
     </div>
-
   
   <!--/HEADER-->
 
   <!--BANNER-->
+
+    <div class="bd-example">
+      <div id="carouselExampleCaptions" class="carousel slide" data-interval="3000" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./" class="d-block w-100 imagem-carrossel-um" alt="..">
+          <div class="carousel-caption d-none d-md-block h-50">
+            <h1 class="fonte-titulo">!</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./" class="d-block w-100 imagem-carrossel-dois" alt="..">
+          <div class="carousel-caption d-none d-md-block h-50">
+            <h1 class="fonte-titulo">!</h1>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      </div>
+    </div>
  
   <!--/BANNER-->
 
@@ -83,9 +114,10 @@
             <br><br>
             Faça já seu <a href="cadastro.html" class="link-cadastro">cadastro</a> e conheça nossos serviços!
           </p>
-          </div>
-                </div>
+        </div>
       </div>
+    </div>
+
     <!--CHAMADA NEWSLETTER-->
       <div class="container col col-lg-6">
         <p>
@@ -101,7 +133,6 @@
         <div  class="col-lg-8" id="retornoEmail"></div>
           <button type="submit" id="btn_frm_newsletter" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Enviar</button>
       </div>
-    
     </div>
   </section>
 
