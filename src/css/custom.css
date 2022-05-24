@@ -103,6 +103,10 @@
     text-decoration: none;
 }
 
+#textoSobre{
+    text-align: justify;
+}
+
 @media (max-width: 768px) {
     
     .principal{
