@@ -45,20 +45,50 @@ body {
 }
 
 #textInicial {
-    margin-top: 65px;
+    margin-top: 80px;
 }
 
 #botoesPrincipal {
-    position: absolute;
-    width: 509px;
-    height: 68px;
-    left: 125px;
+    width: 200px;
+    height: 40px;
 }
 
 #btn1 {
+    width: 150px;
+    height: 40px;
+    margin-left: 0;
+    background-color: #FFFFFF;
+    border-radius: 55px;
+    font-family: 'Inter';
+    color: #C55FFC;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
 
 }
 
+#btn1:hover{
+    color:#FFFFFF;
+    background-color: #C55FFC;
+}
+
 #btn2 {
-    
+    box-sizing: border-box;
+    width: 150px;
+    height: 40px;
+    border: 3px solid #FFFFFF;
+    background-color: #C55FFC;
+    border-radius: 55px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 20px;
+    color: white;
+    }
+
+#btn2:hover {
+    color: #C55FFC;
+    background-color: #FFFFFF;
 }
