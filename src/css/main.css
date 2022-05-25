@@ -3,3 +3,25 @@
 @import url(./global.css);
 @import url(./custom.css);
 @import url(./responsive.css);
+
+body {
+    background-color: white;
+}
+
+.navBar1 {
+    font-family: 'Inter';
+    width: 1845px;
+    height: 101px;
+    top: 2px;
+    background: rgba(136, 63, 193, 0.87);
+    border-radius: 55px 55px 0px 0px;
+}
+
+.navbar {
+    width: 1800px;
+    height: 101px;
+    top: 2px;
+    background: rgba(136, 63, 193, 0.87);
+    border-radius: 55px 55px 0px 0px;
+}
+
