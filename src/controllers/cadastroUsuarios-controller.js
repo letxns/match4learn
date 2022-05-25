@@ -14,7 +14,7 @@ class cadastroController{
         const cidade = $('#cidade').val()
         const uf = $('#uf').val()
         
-       const Cadastro = new Cadastro(nome, email, senha, cep, logradouro, numero, bairro, cidade, uf);
+        const Cadastro = new Cadastro(nome, email, senha, cep, logradouro, numero, bairro, cidade, uf);
         console.log(Cadastro);
         this.array.push(Cadastro);
         console.log(this.array);
@@ -25,33 +25,9 @@ class cadastroController{
 
 const novoCadastro = new cadastroController();
 
-
-
 $('#btnCadastrar').click(function (event) {
     event.preventDefault();
 
     novoCadastro.Cadastro();
 
 })
-
-
-
-
-
-
-
-
-/*
-
-    CÓDIGO BREAKOUT ROOM
-
-class AnotacoesController {
-    constructor(array){
-        array = [];
-        addAnotacoes = () => {
-            titulo = document.querySelector("#titulo").val();
-            descricaoTarefa = document.querySelector("#descricaoTarefa").val();
-            console.log(AnotacoesController)
-        }
-    }
-}*/

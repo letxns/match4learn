@@ -3,27 +3,21 @@
 
 }
 
-#retornoEmail, #retornoNome{
-
+#retornoEmail, #retornoNome, #retornoSenha, #retornoZip, #retornoNumero{
    font-size: small;
    text-align:end ;
    display: flex;
    justify-content: end;
 }
 
-.emailValidado{
+.emailValidado, #retornoSucesso{
    color: rgb(4, 184, 10);
   
 }
 
-.emailInvalido, .nomeInvalido{
+.emailInvalido, .nomeInvalido, .senhaInvalida, .zipInvalido, .numeroInvalido{
    color: rgb(251, 0, 0);
-  
 }
-
-
-
-
 
 .imagemNewsLetter{
    width: auto;

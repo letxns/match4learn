@@ -13,16 +13,50 @@ $("#btn_login").click(function () {
 function validarLogin(){
   validaNome();
   validaEmail();
+  validaSenha();
+  validaCep();
+  validaNumero();
+
+  $("#retornoSucesso").html(`<p class='retornoSucesso'>E-mail cadastrado com sucesso</p>`);
+}
+
+function validaCep(){
+  let zip = $("#inputZip").val();
+
+  if(zip.length < 8){
+    $("#retornoZip").html(`<p class="zipInvalido">Digite um CEP válido</p>`);
+  }else{        
+    $("#retornoZip").html(`<p></p>`);      
+  } 
 }
 
 function validaNome(){
   let nome = $("#inputNome").val();
 
   if(nome.length === 0){
-    // $("#modal-mensagem").modal();
     $("#retornoNome").html(`<p class="nomeInvalido">Nome Inválido</p>`);
   }else{        
     $("#retornoNome").html(`<p></p>`);      
+  } 
+}
+
+function validaNumero(){
+  let numero = $("#numero").val();
+
+  if(numero.length === 0){
+    $("#retornoNumero").html(`<p class="numeroInvalido">Digite um número</p>`);
+  }else{        
+    $("#retornoNumero").html(`<p></p>`);      
+  } 
+}
+
+function validaSenha(){
+  let senha = $("#inputSenha").val();
+
+  if(senha.length <= 6 || senha.length >= 16){
+    $("#retornoSenha").html(`<p class="senhaInvalida">Digite uma senha entre 6 a 16 caracteres.</p>`);
+  }else{        
+    $("#retornoSenha").html(`<p></p>`);      
   } 
 }
 
@@ -33,8 +67,10 @@ function validaEmail(){
     email.indexOf("@") >= 0 &&
     email.indexOf(".") >= 0 &&
     email.indexOf(" ") <= 0
+    
   ) {
-    $("#retornoEmail").html(`<p class='emailValidado'>E-mail cadastrado com sucesso</p>`);    
+    $("#retornoEmail").html(`<p class='emailValidado'>E-mail cadastrado com sucesso</p>`);
+    
   }else{        
     $("#retornoEmail").html(`<p class='emailInvalido' >E-mail Inválido</p>`);      
   }   

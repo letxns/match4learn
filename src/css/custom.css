@@ -30,6 +30,8 @@
     width: 100%;
 }
 
+
+
 .container-card{
     flex-direction: row;
 }
@@ -44,16 +46,17 @@
 
 .contato a {
     text-decoration: none;
+    color: rgb(107, 54, 163);
 }
 
 .contato a:hover {
-    color: rgb(107, 54, 163);
+    color: #0D6EFD;
 }
 
 .imagem-contato{
     width: 35%;
     height: 35%;
-    border-radius: 150px;
+    border-radius: 250px;
 }
 
 .link-cadastro{
@@ -69,6 +72,10 @@
     display: flex;
     justify-content: end;
     text-align: end;
+}
+
+.paragrafo-contato{
+    font-size: 0.8em;
 }
 
 .plano{
@@ -96,6 +103,11 @@
     align-self: end;
 }
 
+.titulo-contato{
+    text-align: center;
+    font-size: 2em;
+}
+
 .recupera-senha{
     display: flex;
     justify-content: end;
@@ -103,11 +115,17 @@
     text-decoration: none;
 }
 
+#textoSobre{
+    text-align: justify;
+}
+
+#banner{
+    width: 2000px;
+    height: 400px;
+
+}
+
 @media (max-width: 768px) {
-    
-    .principal{
-        flex-direction: column;
-    }
 
     .card-contato{
         flex-direction: row;
@@ -118,13 +136,10 @@
         flex-direction: column;
     }
 
-    .contato{
-        flex-direction: row;
+    .container-contato{
+        display: flex;
+        flex-direction: column;
     }
-
-}
-
-@media (max-width: 320px) {  
 
     .contato{
         flex-direction: column;
@@ -132,7 +147,21 @@
 
     .imagem-contato{
         align-self: center;
+        margin-bottom: 5%;
+    }  
+
+    .titulo-contato{
+        font-size: 1.3em;
+    }  
+
+    .principal{
+        flex-direction: column;
     }
+
+}
+
+@media (max-width: 320px) {  
+
     .menu{
         flex-direction: column;
     }
