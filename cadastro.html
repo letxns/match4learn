@@ -80,10 +80,13 @@
     <div class="col-md-6">
       <label for="inputPassword4" class="form-label">Senha</label>
       <input type="password" class="form-control" id="inputSenha">
+      <span id="retornoSenha"></span>
     </div>
     <div class="col-md-2">
       <label for="inputZip" class="form-label">CEP</label>
       <input type="number" class="form-control" id="inputZip">
+      <span id="retornoZip"></span>
+
     </div>
        <div class="col-11">
       <label for="inputAddress" class="form-label">Logradouro</label>
@@ -92,6 +95,7 @@
     <div class="col-3">
       <label for="inputAddress" class="form-label">Número</label>
       <input type="text" class="form-control" id="numero">
+      <span id="retornoNumero"></span>
     </div>
     <div class="col-6">
       <label for="inputAddress2" class="form-label">Bairro</label>
@@ -117,8 +121,10 @@
     <div class="col-12">
       <button type="submit" id="btnCadastrar" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Cadastrar</button>
     </div>
+    <span id="retornoSucesso"></span>
   </form>
 </div>
+
   <!--/FORMULARIO-->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -171,7 +177,7 @@
         </ul>
       </div>
       <div class="col-6 col-lg-2 mb-3">
-        <h5>Serviços so cliente</h5>
+        <h5>Serviços do cliente</h5>
         <ul class="list-unstyled">
           <li class="mb-2"><a href="./contato.html">Contato</a></li>
           <li class="mb-2"><a href="#">Políticas de reembolso</a></li>
