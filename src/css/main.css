@@ -51,6 +51,7 @@ body {
 #botoesPrincipal {
     width: 200px;
     height: 40px;
+    margin-inline-end: 40px;
 }
 
 #btn1 {
@@ -94,6 +95,7 @@ body {
 }
 
 #footerPrincipal {
+    margin-top: 70px;
     background-color: #C55FFC;
     background-size: 100%;
     font-family: 'Inter';
@@ -101,6 +103,7 @@ body {
 }
 
 #footer {
+    margin-top: 40px;
     background-color: #C55FFC;
     background-size: 100%;
     font-family: 'Inter';
