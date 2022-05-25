@@ -3,18 +3,18 @@
 @import url(./global.css);
 @import url(./custom.css);
 @import url(./responsive.css);
-
+@import url('https://fonts.googleapis.com/css2?family=Harmattan:wght@400;700&display=swap');
 
 
 body {
     background-color: rgba(197, 95, 252, 1);
-    font-family: 'Inter';
+    font-family: 'Harmattan';
     color: white;
     
 }
 
 .navBar1 {
-    font-family: 'Inter';
+    font-family: 'Harmattan';
     width: 100%;
     height: 80px;
     top: 2px;
@@ -60,7 +60,7 @@ body {
     margin-left: 0;
     background-color: #FFFFFF;
     border-radius: 55px;
-    font-family: 'Inter';
+    font-family: 'Harmattan';
     color: #C55FFC;
     font-style: normal;
     font-weight: 600;
@@ -81,7 +81,7 @@ body {
     border: 3px solid #FFFFFF;
     background-color: #C55FFC;
     border-radius: 55px;
-    font-family: 'Inter';
+    font-family: 'Harmattan';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -98,7 +98,7 @@ body {
     margin-top: 70px;
     background-color: #C55FFC;
     background-size: 100%;
-    font-family: 'Inter';
+    font-family: 'Harmattan';
     color: #FFFFFF;
 }
 
@@ -106,6 +106,6 @@ body {
     margin-top: 40px;
     background-color: #C55FFC;
     background-size: 100%;
-    font-family: 'Inter';
+    font-family: 'Harmattan';
     color: #FFFFFF;
 }
