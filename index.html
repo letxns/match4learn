@@ -6,48 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Harmattan:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="./src/img/ico.ico">
   <link rel="stylesheet" href="./src/css/main.css">
   <title>match4learn</title>
 </head>
 <body>
+
   <!--HEADER-->
-  <nav class="navbar navbar-expand-lg px-3 py-2 bg-violet text-white" id="color">
-    <div class="container navbar-nav justify-content-around">
+  <nav class="navbar navbar-expand-lg fixed-top px-3 py-2 bg-violet text-white" id="navBar1">
+    <div class="container navbar-nav d-flex justify-content-lg-end" id="navBar">
         <div class="logo d-flex menu">
           <a href="index.html" class="text-white text-decoration-none me-5">
-            <img src="./src/img/logo.png" class="bi me-2" width="auto" height="60" role="img" aria-label="Logo">          
+            <img src="./src/img/logo2.png" class="bi me-2" width="auto" height="60" role="img" aria-label="Logo">          
           </a>
           <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div> 
-        <div class="collapse navbar-collapse justify-content-end" >
+        <div class="collapse navbar-collapse d-flex justify-content-lg-end" >
           <div class="navbar-nav" id="navbarNavAltMarkup">
-            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+            <ul class="nav col-9 col-lg-auto my-2 my-md-0 pr-7 text-white">
               <li class="navbar-nav">
                 <a href="./index.html" class="nav-link text-white">
                   <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg>
-                  Página Inicial
-                </a>
-              </li>
-              <li>
-                <a href="./planos.html" class="nav-link text-white">
-                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
-                  Planos e Serviços
-                </a>
-              </li>
-              <li>
-                <a href="./contato.html" class="nav-link text-white">
-                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>
-                  Contato
+                  PÁGINA INICIAL
                 </a>
               </li>
               <li>
                 <a href="./sobre.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
+                  SOBRE
+                </a>
+              </li>
+              <li>
+                <a href="./planos.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>
+                  PLANOS E SERVIÇOS
+                </a>
+              </li>
+              <li>
+                <a href="./contato.html" class="nav-link text-white">
                   <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>
-                  Sobre
+                  CONTATO
                 </a>
               </li>
             </ul>
@@ -55,41 +56,81 @@
         </div>
     </div>
   </nav>
-    <div class="px-3 py-2 border-bottom mb-3">
-      <div class="container d-flex flex-wrap justify-content-lg-end">
-          <div class="text-end">
-          <a href="./login.html" class="btn btn-light text-dark me-2">Entrar</a>
-          <a href="./cadastro.html" class="btn btn-primary">Cadastrar</a>
-        </div>
-      </div>
-    </div>
-
   
   <!--/HEADER-->
 
   <!--BANNER-->
- 
-  <!--/BANNER-->
+  
+  <div class="bd-example">
+    <div id="carouselExampleCaptions" class="carousel slide" data-interval="3000" data-bs-ride="carousel">
+     <div class="carousel-indicators">
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+     </div>
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+         <img src="./src/img/banner/banner2.jpg" class="d-block w-100 imagem-carrossel-um" alt="...">
+         <div class="carousel-caption d-none d-md-block h-50">
+           <h1 class="fonte-titulo">Onde conhecimento e vontade de aprender se encontram!</h1>
+         </div>
+       </div>
+       <div class="carousel-item">
+         <img src="./src/img/banner/banner4.jpg" class="d-block w-100 imagem-carrossel-dois" alt="...">
+         <div class="carousel-caption d-none d-md-block h-50">
+           <h1 class="fonte-titulo"></h1>
+         </div>
+       </div>
+       <div class="carousel-item">
+        <img src="./src/img/banner/banner6.jpg" class="d-block w-100 imagem-carrossel-tres" alt="...">
+        <div class="carousel-caption d-none d-md-block h-50">
+          <h1 class="fonte-titulo"></h1>
+        </div>
+      </div>
+     </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
+    </div>
+   </div>
 
-  <section class="container">
-    <div class="col col-lg-6 align-items-center d-flex justify-content-between principal">     
-      <div class="col col-lg-12">
-        <h2><strong>BEM VINDO</strong></h2>
+  <!--BANNER-->
+
+  <section class="container" id="containerPrincipal">
+    <div class="col col-lg-6 align-items-center d-flex justify-content-between principal" id="textoInicial">     
+      <div class="col col-lg-12" id="textInicial">
+        <h1><strong>Learn To Learn</strong></h1>
         <div class="align-items-center">
           <div class="col col-lg-8 texto-inicial">
           <p>
-            Dedicada a unir pessoas interessadas em aprender e ensinar as mais diversas linguagens de programação, 
-            a <strong>match4learn</strong> tem como objetivo te ajudar a encontrar um par ideal para seus estudos. 
+            Dedicada a unir pessoas interessadas em aprender e ensinar as mais diversas linguagens de progamação, 
+            a <strong>MATCH4LEARN</strong>, tem como objetivo te ajudar a encontrar um par ideal para os seus estudos.
             <br><br>
-            Faça já seu <a href="cadastro.html" class="link-cadastro">cadastro</a> e conheça nossos serviços!
+            Usando a tecnologia para te ajudar e te ensinar
+            a melhor maneira de aprender. Cadastre agora!
+
+            <br><br>
           </p>
+          <div class="px-1 py-1 d-flex flex-row justify-content-around border-bottom mb-3">
+            <div class="container position-relative" id="botoesPrincipal">
+                <div class="text-end">
+                <a href="./login.html" class="btn btn-light " id="btn1">Entrar</a>
+                <a href="./sobre.html" class="btn btn-primary" id="btn2">Leia mais</a>
+              </div>
+            </div>
           </div>
-                </div>
+        </div>
       </div>
+    </div>
+
     <!--CHAMADA NEWSLETTER-->
-      <div class="container col col-lg-6">
+      <div class="container col col-lg-6" id="newsletter">
         <p>
-          Não perca tempo e se inscreva agora na nossa lista de espera!
+        <h5><strong>CADASTRE-SE NA NOSSA NEWSLETTER:</strong></h5>
         </p>
         <div class="col-lg-8">
           <input type="text" class="form-control mb-2" placeholder="Nome Completo" id="inputNome">
@@ -101,21 +142,19 @@
         <div  class="col-lg-8" id="retornoEmail"></div>
           <button type="submit" id="btn_frm_newsletter" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Enviar</button>
       </div>
-    
     </div>
   </section>
 
  <!--FOOTER-->
- <footer class="bd-footer py-5 mt-5 bg-light">
-  <div class="container py-5">
+ <footer class="bd-footer mw-100" id="footerPrincipal">
+  <div class="container py-5" id="footer">
     <div class="row">
-      <div class="col-lg-3 mb-3">
-        <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="index.html" aria-label="Bootstrap">
-          <img src="./src/img/ico.ico" width="25px" alt="logo match 4 learn" class="m-1">
-          <span class="fs-5">match4learn</span>
+      <div class="col-lg-3 mb-3 text-white">
+        <a class="d-inline-flex align-items-center mb-2 .text-white" href="index.html" aria-label="Bootstrap">
+          <img src="./src/img/logo.png" width="250px" alt="logo match 4 learn" class="m-1">
         </a>
         <ul class="list-unstyled small text-muted">
-          <li class="mb-2">Designed and built with all the love in the world by <a href="/docs/5.0/about/team/">Grupo 9 - T18</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
+          <li class="mb-2">Designed and built with all the love in the world by <a href="https://github.com/systemilc/match4learn">Grupo 9 - T18</a> with the help of <a href="https://github.com/systemilc/match4learn/graphs/contributors">our contributors</a>.</li>
           <li class="mb-2">Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
           <li class="mb-2">Currently v5.0.2.</li>
         </ul>
@@ -126,37 +165,34 @@
           <li class="mb-2"><a href="./index.html">Página Inicial</a></li>
           <li class="mb-2"><a href="./planos.html">Planos e Serviços</a></li>
           <li class="mb-2"><a href="./contato.html">Contato</a></li>
-          <li class="mb-2"><a href="./sobre.html">Sobre</a></li>
+          
         </ul>
       </div>
       <div class="col-6 col-lg-2 mb-3">
-        <h5>Guides</h5>
+        <h5>Sobre nós</h5>
         <ul class="list-unstyled">
-          <li class="mb-2"><a href="/docs/5.0/getting-started/">Getting started</a></li>
-          <li class="mb-2"><a href="/docs/5.0/examples/starter-template/">Starter template</a></li>
-          <li class="mb-2"><a href="/docs/5.0/getting-started/webpack/">Webpack</a></li>
-          <li class="mb-2"><a href="/docs/5.0/getting-started/parcel/">Parcel</a></li>
+          <li class="mb-2"><a href="./sobre.html">Sobre nós</a></li>
+          <li class="mb-2"><a href="#">Política de privacidade</a></li>
+          <li class="mb-2"><a href="#">Termos e Condições</a></li>
         </ul>
       </div>
       <div class="col-6 col-lg-2 mb-3">
-        <h5>Projects</h5>
+        <h5>Serviços do cliente</h5>
         <ul class="list-unstyled">
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Bootstrap 5</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/icons">Icons</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/rfs">RFS</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap-npm-starter">npm starter</a></li>
-        </ul>
+          <li class="mb-2"><a href="./contato.html">Contato</a></li>
+          <li class="mb-2"><a href="#">Políticas de reembolso</a></li>
+          <li class="mb-2"><a href="#">Mapa do site</a></li>
+          </ul>
       </div>
       <div class="col-6 col-lg-2 mb-3">
-        <h5>Community</h5>
+        <h5>Minha conta</h5>
         <ul class="list-unstyled">
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions">Discussions</a></li>
-          <li class="mb-2"><a href="https://github.com/sponsors/twbs">Corporate sponsors</a></li>
-          <li class="mb-2"><a href="https://opencollective.com/bootstrap">Open Collective</a></li>
-          <li class="mb-2"><a href="https://bootstrap-slack.herokuapp.com/">Slack</a></li>
-          <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack Overflow</a></li>
+          <li class="mb-2"><a href="#">Minha conta</a></li>
+          <li class="mb-2"><a href="#">Histórico de transações</a></li>
+          <li class="mb-2"><a href="#">Afiliados</a></li>
+          <li class="mb-2"><a href="#">Boletim informativo</a></li>
+          <li class="mb-2"><a href="#">Cashback</a></li>
+          
         </ul>
       </div>
     </div>

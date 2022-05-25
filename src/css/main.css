@@ -3,3 +3,109 @@
 @import url(./global.css);
 @import url(./custom.css);
 @import url(./responsive.css);
+@import url('https://fonts.googleapis.com/css2?family=Harmattan:wght@400;700&display=swap');
+
+
+body {
+    background-color: rgba(197, 95, 252, 1);
+    font-family: 'Harmattan';
+    color: white;
+    
+}
+
+.navBar1 {
+    font-family: 'Harmattan';
+    width: 100%;
+    height: 80px;
+    top: 2px;
+    background: rgba(136, 63, 193, 0.87);
+    border-radius: 55px 55px 55px 55px;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    top: 6px;
+    background: rgba(136, 63, 193, 0.87);
+    box-shadow: 0px 0px 20px rgba(136, 63, 193, 0.87);
+    border-radius: 55px 55px 55px 55px;
+    margin-left: 3px;
+    margin-right: 0;
+}
+
+#containerPrincipal {
+    margin-top: 80px;
+    box-shadow: 0px 0px 20px rgba(197, 95, 252, 1);
+   
+}
+
+#textoInicial {
+    background-size: 2800px;
+    margin-left: 80px;
+}
+
+#textInicial {
+    margin-top: 80px;
+}
+
+#botoesPrincipal {
+    width: 200px;
+    height: 40px;
+    margin-inline-end: 40px;
+}
+
+#btn1 {
+    width: 150px;
+    height: 40px;
+    margin-left: 0;
+    background-color: #FFFFFF;
+    border-radius: 55px;
+    font-family: 'Harmattan';
+    color: #C55FFC;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+}
+
+#btn1:hover{
+    color:#FFFFFF;
+    background-color: #C55FFC;
+}
+
+#btn2 {
+    box-sizing: border-box;
+    width: 150px;
+    height: 40px;
+    border: 3px solid #FFFFFF;
+    background-color: #C55FFC;
+    border-radius: 55px;
+    font-family: 'Harmattan';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 20px;
+    color: white;
+    }
+
+#btn2:hover {
+    color: #C55FFC;
+    background-color: #FFFFFF;
+}
+
+#footerPrincipal {
+    margin-top: 70px;
+    background-color: #C55FFC;
+    background-size: 100%;
+    font-family: 'Harmattan';
+    color: #FFFFFF;
+}
+
+#footer {
+    margin-top: 40px;
+    background-color: #C55FFC;
+    background-size: 100%;
+    font-family: 'Harmattan';
+    color: #FFFFFF;
+}
