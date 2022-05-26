@@ -33,6 +33,37 @@ body {
     margin-right: 0;
 }
 
+
+.carrosselBanner {
+    margin-top: 80px;
+    image-resolution:initial;
+    image-orientation: from-image;
+    image-rendering: optimizeQuality;
+}
+
+.imagem-carrossel-um{
+    margin-top: 80px;
+    object-fit:cover;
+    object-position: 0 80%;
+    height: 400px;
+}
+
+.imagem-carrossel-dois{
+    margin-top: 80px;
+    object-fit: cover;
+    height: 400px;
+}
+
+.imagem-carrossel-tres{
+    margin-top: 80px;
+    object-fit: cover;
+    height: 400px;
+}
+
+.fonte-titulo {
+    font-family: 'Harmattan', sans-serif;
+}
+
 #containerPrincipal {
     margin-top: 80px;
     box-shadow: 0px 0px 20px rgba(197, 95, 252, 1);
