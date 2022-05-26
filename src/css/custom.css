@@ -30,8 +30,6 @@
     width: 100%;
 }
 
-
-
 .container-card{
     flex-direction: row;
 }
@@ -151,6 +149,10 @@ body {
     margin-right: 0;
 }
 
+.card-text{
+    color: #000;
+}
+
 .carrosselBanner {
     margin-top: 80px;
     image-resolution:initial;
@@ -194,7 +196,7 @@ body {
 
 #textInicial {
     text-align: justify;
-    margin-top: 80px;
+    margin-top: 5%;
 }
 
 #botoesPrincipal {
@@ -286,6 +288,10 @@ body {
 
 }
 @media (max-width: 768px) {
+
+    .carousel{
+        display: none;
+    }
 
     .card-contato{
         flex-direction: row;
