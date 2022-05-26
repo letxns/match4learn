@@ -92,11 +92,18 @@
     display: flex;
     justify-content: center;
     padding: 2%;
+    font-family: 'Harmattan', sans-serif;
+    color: rgb(107, 54, 163);
 }
 
 .preco-titulo{
     align-self: center;
     margin: 0% 2%;
+}
+
+#preco-valor{
+    font-family: 'Harmattan', sans-serif;
+    color: rgb(107, 54, 163);
 }
 
 .preco-mes{
