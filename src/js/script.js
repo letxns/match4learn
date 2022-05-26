@@ -105,7 +105,6 @@ $("#btnCadastrar").click(function (event) {
   let uf = $("#uf").val();
   let aceite = $('#gridCheck').prop('checked')
 
-
   console.log(email);
   console.log(senha);
   console.log(cep);
@@ -115,7 +114,7 @@ $("#btnCadastrar").click(function (event) {
   console.log(cidade);
   console.log(uf);
   console.log(aceite);
-
+  
   validarLogin();
-});
 
+});
