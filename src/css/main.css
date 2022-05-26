@@ -83,6 +83,10 @@ body {
     margin-inline-end: 40px;
 }
 
+.text-end {
+    display: flex;
+}
+
 #btn1 {
     width: 150px;
     height: 40px;
