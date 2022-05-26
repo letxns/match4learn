@@ -1,4 +1,4 @@
-<h1 align="center">match4learn</h1>
+<img src="https://i.imgur.com/xRC84Ex.png" align="center">
 
 ## 📝Resoluções usadas para melhorar e ajudar na criação do projeto seguindo todo o 'Book de [Rubricas](https://cdn.discordapp.com/attachments/950854418453102592/976471796863864842/Resilia_Web_Dev_Rubrica_Modulo_2.pdf)':
 
