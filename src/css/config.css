@@ -13,7 +13,11 @@ font-family: 'Roboto', sans-serif;
 }
 footer a{
     text-decoration: none;
-    color: var(--cor-purple-charcoral);
+    color: var(--cor-purple-haze);
+}
+
+footer a:hover{
+    color: var(--cor-purple-violet);
 }
 
 input[type=number]::-webkit-inner-spin-button,

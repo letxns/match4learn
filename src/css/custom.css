@@ -193,6 +193,7 @@ body {
 }
 
 #textInicial {
+    text-align: justify;
     margin-top: 80px;
 }
 
@@ -200,16 +201,20 @@ body {
     width: auto;
     height: auto;
     margin-inline-end: 40px;
+     align-items: center;
+    justify-content: center;
+    
+
 }
 
 .text-end {
     display: flex;
+   
 }
 
-#btn1 {
+#btn1, button{
     width: 150px;
     height: 40px;
-    
     background-color: #FFFFFF;
     border-radius: 55px;
     font-family: 'Harmattan';
@@ -262,6 +267,24 @@ body {
     color: #FFFFFF;
 }
 
+.btn-warning{
+    color: #FFFFFF;
+    background-color: var(--cor-purple);
+    border: 0;
+}
+
+.btn-warning:hover{
+    color: #000;
+    background-color: #ffffff;
+    border: 0;
+}
+
+@media (max-width: 1000px) {
+#coluna{
+    flex-direction: column;
+}
+
+}
 @media (max-width: 768px) {
 
     .card-contato{
