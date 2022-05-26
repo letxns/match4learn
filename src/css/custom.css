@@ -35,11 +35,14 @@
 }
 
 .contato{
+    background-color: white;
     border: 1px solid black;
     box-shadow: 2px 2px blue;
     padding: 5%;
     margin: 0 5% 5% 0;
     display: flex;
+    font-family: 'Harmattan';
+    color:purple;
 }
 
 .contato a {
