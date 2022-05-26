@@ -34,3 +34,5 @@
 🔹 HTML5 <br>
 🔹 JavaScript <br>
 🔹 JQuery <br>
+🔹 Bootstrap <br>
+🔹 Figma <br>
