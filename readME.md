@@ -27,10 +27,12 @@
 ## LINK PARA ACESSAR A GITPAGES:
  ™[MATCH4LEARN](https://systemilc.github.io/match4learn/).
 
-# ⚙ FERRAMENTAS UTILIZADAS PARA A CRIAÇÃO DO PROJETO:
+## ⚙ FERRAMENTAS UTILIZADAS PARA A CRIAÇÃO DO PROJETO:
 
 🔹 CSS3 <br>
 🔹 Git <br>
 🔹 HTML5 <br>
 🔹 JavaScript <br>
 🔹 JQuery <br>
+🔹 Bootstrap <br>
+🔹 Figma <br>
