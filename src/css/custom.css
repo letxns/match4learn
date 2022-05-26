@@ -107,11 +107,7 @@
 }
 
 .recupera-senha{
-<<<<<<< HEAD
     color: rgb(68, 67, 67);
-=======
-    color: rgb(80, 79, 79);
->>>>>>> db5c1048a98572a20f1efad6203ee569cae9631c
     display: flex;
     justify-content: end;
     font-size: 0.9em;

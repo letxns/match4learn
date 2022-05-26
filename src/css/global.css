@@ -11,20 +11,12 @@
 }
 
 .emailValidado, #retornoSucesso{
-<<<<<<< HEAD
    color: rgb(0, 0, 0);
-=======
-   color: rgb(255, 255, 255);
->>>>>>> db5c1048a98572a20f1efad6203ee569cae9631c
   
 }
 
 .emailInvalido, .nomeInvalido, .senhaInvalida, .zipInvalido, .numeroInvalido{
-<<<<<<< HEAD
    color: rgb(255, 255, 255);
-=======
-   color: rgb(0, 0, 0);
->>>>>>> db5c1048a98572a20f1efad6203ee569cae9631c
 }
 
 .imagemNewsLetter{
