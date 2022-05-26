@@ -10,7 +10,6 @@ body {
     background-color: rgba(197, 95, 252, 1);
     font-family: 'Harmattan';
     color: white;
-    
 }
 
 .navBar1 {
@@ -32,7 +31,6 @@ body {
     margin-left: 3px;
     margin-right: 0;
 }
-
 
 .carrosselBanner {
     margin-top: 80px;
@@ -97,7 +95,6 @@ body {
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-
 }
 
 #btn1:hover{
@@ -118,7 +115,7 @@ body {
     font-size: 24px;
     line-height: 20px;
     color: white;
-    }
+}
 
 #btn2:hover {
     color: #C55FFC;
