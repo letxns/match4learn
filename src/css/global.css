@@ -11,12 +11,12 @@
 }
 
 .emailValidado, #retornoSucesso{
-   color: rgb(4, 184, 10);
+   color: rgb(0, 0, 0);
   
 }
 
 .emailInvalido, .nomeInvalido, .senhaInvalida, .zipInvalido, .numeroInvalido{
-   color: rgb(251, 0, 0);
+   color: rgb(255, 255, 255);
 }
 
 .imagemNewsLetter{

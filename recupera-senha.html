@@ -13,7 +13,7 @@
 </head>
 <body>
   <!--HEADER-->
-  <header class="p-3 bg-violet text-white fixed-top ">
+  <header class="p-3 bg-violet text-white">
     <div class="container ">
       <div class="logo d-flex menu">
         <a href="index.html" class="text-white text-decoration-none me-5">
@@ -55,33 +55,23 @@
       <div class="col col-lg-12">
         <h2><strong>Esqueceu sua senha?</strong></h2>
         <div class="align-items-center">
-          <div class="col col-lg-8 texto-inicial">
-          <p>
-            Faça seu <a href="cadastro.html" class="link-cadastro">cadastro</a> em poucos minutos e conheça nossos serviços!
-          </p>
+          <div class="col-lg-8">
+            <input type="text" class="form-control mb-2" placeholder="Nome Completo" id="inputNome">
           </div>
-          <!--<div class="col col-lg-4">
-          <img class="imagemNewsLetter" src="./src/img/sino.png" alt="">
-          </div>-->
+          <span class="col-lg-8" id="retornoNome"></span>
+          <div class="col-lg-8">
+            <input id="inputEmail" type="email" class="form-control mb-2" placeholder="E-mail">
+          </div>
+          <span class="col-lg-8" id="retornoEmail"></span>        
+          <a href="recupera-senha.html" class="recupera-senha col-lg-8">Esqueci minha senha</a>
+    <!-- Button trigger modal -->        
+          <button type="submit" id="btn_login" class="btn btn-primary">Enviar</button>
+        </div>
         </div>
       </div>
     <!--Login-->
       <div class="container col col-lg-6">
-        <p>
-          Faça já seu login!
-        </p>
-        <div class="col-lg-8">
-          <input type="text" class="form-control mb-2" placeholder="Nome Completo" id="inputNome">
-        </div>
-        <span class="col-lg-8" id="retornoNome"></span>
-        <div class="col-lg-8">
-          <input id="inputEmail" type="email" class="form-control mb-2" placeholder="E-mail">
-        </div>
-        <span class="col-lg-8" id="retornoEmail"></span>        
-        <a href="recupera-senha.html" class="recupera-senha col-lg-8">Esqueci minha senha</a>
-  <!-- Button trigger modal -->        
-        <button type="submit" id="btn_login" class="btn btn-primary">Enviar</button>
-      </div>
+        
     <!--/Login-->
 <!-- Modal -->
 <div class="modal fade" id="modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">

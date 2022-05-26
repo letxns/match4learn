@@ -107,6 +107,7 @@
 }
 
 .recupera-senha{
+    color: rgb(68, 67, 67);
     display: flex;
     justify-content: end;
     font-size: 0.9em;

@@ -11,17 +11,17 @@ cadastro = {
     termo: true,
 }
 
-$('#btn_login').click(function(event){
+$('#btnLogin').click(function(event){
     event.preventDefault()
 
     let email= $('#inputEmail').val()
 
     if(email === cadastro.email){
-        alert('email cadastrado')
+        alert('Login bem sucedido')
     }else if(email === ""){
         $("#retornoEmail").html(`<p class='emailInvalido'>Digite um e-mail válido</p>`);   
     }else{
         alert('O e-mail informado não está cadastrado. Você será redirecionado para a página de cadastro.')
         window.location.href=('./cadastro.html')
     }
-})
+});
