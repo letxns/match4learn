@@ -118,3 +118,29 @@ $("#btnCadastrar").click(function (event) {
   validarLogin();
 
 });
+
+
+$(document).ready(function (){
+  validate();
+  $('#inputNome, #inputEmail, #inputSenha, #inputZip, #logradouro, #numero, #bairro, #cidade, #uf').change(validate);
+});
+
+function validate(){
+  if ($('#inputNome').val().length > 0 &&
+      $('#inputEmail').val().length > 0 &&
+      $('#inputSenha').val().length > 0 &&
+      $('#inputZip').val().length > 0 &&
+      $('#logradouro').val().length > 0 &&
+      $('#numero').val().length > 0 &&
+      $('#bairro').val().length > 0 &&
+      $('#cidade').val().length > 0 &&
+      $('#uf').val().length > 0
+      
+      
+      ) {
+      $("#btnCadastrar").prop("disabled", false);
+  }
+  else {
+      $("#btnCadastrar").prop("disabled", true);
+  }
+}
