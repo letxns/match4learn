@@ -28,6 +28,7 @@
 
 .container{
     width: 100%;
+    height: auto;
 }
 
 .container-card{
@@ -79,6 +80,10 @@
     font-size: 0.8em;
 }
 
+.planos{
+    margin-top: 2%;
+}
+        
 .plano{
     color: rgb(107, 54, 163);
 }
@@ -186,18 +191,8 @@ body {
 }
 
 .containerPrincipal {
-    margin-top: 80px;
+    padding-top: 5%;
     box-shadow: 0px 0px 20px rgba(197, 95, 252, 1);
-}
-
-#textoInicial {
-    background-size: 2800px;
-    margin-left: 5%;
-}
-
-#textInicial {
-    text-align: justify;
-    margin-top: 5%;
 }
 
 #botoesPrincipal {
@@ -277,63 +272,4 @@ body {
     color: #000;
     background-color: #ffffff;
     border: 0;
-}
-
-@media (max-width: 1000px) {
-#coluna{
-    flex-direction: column;
-}
-
-}
-@media (max-width: 768px) {
-
-    .carousel{
-        display: none;
-    }
-
-    .card-contato{
-        flex-direction: row;
-    }
-
-    .container-card{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .container-contato{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contato{
-        flex-direction: column;
-    }
-
-    .containerPrincipal{
-        margin: 0;
-    }
-
-    .imagem-contato{
-        align-self: center;
-        margin-bottom: 5%;
-    }  
-
-    .titulo-contato{
-        font-size: 1.3em;
-    }  
-
-    .principal{
-        flex-direction: column;
-    }
-
-     .menu{
-        flex-direction: column;
-    }   
-
-}
-
-@media (max-width: 320px) {  
-
-
-
 }
