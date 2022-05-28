@@ -1,0 +1,63 @@
+
+@media (max-width: 1000px) {
+    #coluna{
+        flex-direction: column;
+    }
+    
+    }
+    @media (max-width: 768px) {
+    
+        .carousel{
+            display: none;
+        }
+    
+        .card{
+            width: 98%;
+            margin-bottom: 2%;
+        }
+    
+        .card-contato{
+            flex-direction: row;
+        }
+    
+        .container-card{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .container-contato{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .contato{
+            flex-direction: column;
+        }
+    
+        .containerPrincipal{
+            margin: 2%;
+        }
+    
+        .imagem-contato{
+            align-self: center;
+            margin-bottom: 5%;
+        }  
+    
+        .titulo-contato{
+            font-size: 1.3em;
+        }  
+    
+        .principal{
+            flex-direction: column;
+        }
+
+        .sobre, .planos{
+            padding: 2%;
+        }
+    
+         .menu{
+            flex-direction: column;
+        }   
+    
+    }
+    
